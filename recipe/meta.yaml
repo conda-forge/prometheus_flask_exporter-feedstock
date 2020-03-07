@@ -1,18 +1,18 @@
 {% set name = "prometheus_flask_exporter" %}
-{% set version = "0.12.2" %}
+{% set version = "0.13.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 13eb1fc302b36d968fe825e801e2bcbd1fc50104bb8a6c5aa743fee21b92f9de
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a3d7003df268ba0d91d91526ea8abee08e619c91f1fdc16de1604c196654fdee
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,11 +32,11 @@ test:
     - pip check
 
 about:
-  home: "https://github.com/rycus86/prometheus_flask_exporter"
+  home: https://github.com/rycus86/prometheus_flask_exporter
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Prometheus metrics exporter for Flask"
+  summary: Prometheus metrics exporter for Flask
 
 extra:
   recipe-maintainers:
