@@ -5,11 +5,9 @@ Home: https://github.com/rycus86/prometheus_flask_exporter
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/prometheus_flask_exporter-feedstock/blob/master/LICENSE.txt)
 
 Summary: Prometheus metrics exporter for Flask
-
-
 
 Current build status
 ====================
