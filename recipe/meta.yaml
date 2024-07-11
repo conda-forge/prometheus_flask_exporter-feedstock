@@ -1,5 +1,5 @@
 {% set name = "prometheus_flask_exporter" %}
-{% set version = "0.23.0" %}
+{% set version = "0.23.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e4e6beb1b8e1e164da6d70fe1edefc95ef184f113b5047f66f4b7262233da9c0
+  sha256: 587c770a1061e93d72c5cbcdefbd7b633fb764e39dffd7dd16932c9124559244
 
 build:
   number: 0
